@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MqttActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHYSIs Serial Number"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_serial_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Serial Number.."
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publish"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_pub_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pub Topic.."
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_pub_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pub Message.."
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btn_pub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publish"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_sub_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sub Topic.."
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscribe Listen"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_sub_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+
+</LinearLayout>
