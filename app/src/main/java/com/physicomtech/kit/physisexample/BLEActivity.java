@@ -29,7 +29,7 @@ public class BLEActivity extends PHYSIsBLEActivity {
     protected void onBLEConnectedStatus(int result) {
         super.onBLEConnectedStatus(result);
         boolean state = result == CONNECTED;
-        btnConnect.setEnabled(state);
+        btnConnect.setEnabled(!state);
         Toast.makeText(getApplicationContext(), "Connected Status : " + state, Toast.LENGTH_SHORT).show();
         pbConnect.setVisibility(View.INVISIBLE);
     }
